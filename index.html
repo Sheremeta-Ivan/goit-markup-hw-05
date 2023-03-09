@@ -27,7 +27,7 @@
 					<a href="./index.html" class="logo link"><span class="sub-logo">Web</span>Studio</a>
 
 					<ul class="menu-nav list">
-						<li class="item"><a href="./index.html" class="menu-link link">Studio</a></li>
+						<li class="item"><a href="./index.html" class="menu-link link current">Studio</a></li>
 						<li class="item"><a href="./portfolio.html" class="menu-link link">Portfolio</a></li>
 						<li class="item"><a href="" class="menu-link link">Contacts</a></li>
 					</ul>
@@ -48,7 +48,7 @@
 			<section class="hero-page">
 				<div class="container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
-					<button type="button" class="button primary">Order Service</button>
+					<button type="button" class="button primary" data-modal-open>Order Service</button>
 				</div>
 			</section>
 			<!------- /Hero section -------->
@@ -337,7 +337,7 @@
 			</section>
 			<!------- /Customers section -------->
 		</main>
-
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="container footer-container">
 				<div class="footer-main">
@@ -382,5 +382,17 @@
 				</div>
 			</div>
 		</footer>
+		<!-- /Footer -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-close-btn" data-modal-close>
+					<svg class="modal-close-btn-icon" width="8" height="8">
+						<use href="./images/spryte.svg#close-modal"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
